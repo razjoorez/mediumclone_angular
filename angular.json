@@ -58,6 +58,10 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "liveReload": true,
+            "poll": 500
+          },
           "configurations": {
             "production": {
               "browserTarget": "mediumclone_angular:build:production"
@@ -94,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "03493f54-e6a5-41c9-83b3-e989fcd7ec03"
   }
 }
